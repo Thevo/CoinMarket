@@ -1,0 +1,76 @@
+.nav
+    background-color: #0032E3
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 35px 0
+    &__logo-wrap
+        display: flex
+        align-items: center
+    &__burger
+        width: 23px
+        height: 2.5px
+        background-color: #fff
+        border-radius: 4px
+        position: relative
+        margin-right: 12px
+        cursor: pointer
+        // display: none
+        &--opened
+            
+
+    &__burger::before
+        @extend .nav__burger
+        position: absolute
+        content: ''
+        top: 7px
+        left: 0
+
+    &__burger::after
+        @extend .nav__burger
+        position: absolute
+        content: ''
+        top: -6px
+        left: 0
+
+    &__logo
+        font-weight: bold
+        font-size: 32px
+        line-height: 35px
+        letter-spacing: -0.02em
+        color: #FFFFFF
+        cursor: pointer
+        &::after
+            content: '.'
+            color: #5288F1
+    &__list
+        display: flex
+        &-item
+            &:not(:last-child)
+                margin-right: 85px
+        &-link
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            color: #FFFFFF
+    &__buttons
+        display: flex
+        align-items: center
+
+        &-login
+            color: #ffffff
+            margin-right: 35px
+            cursor: pointer
+        &-start
+            color: #ffffff
+            padding: 18px 42px
+            border: 1px solid white
+            border-radius: 10px
+            cursor: pointer
+            font-size: 18px
+            display: block
+            transition: transform .3s
+
+            &:hover
+                transform: translateY(-2px)
