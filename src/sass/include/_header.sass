@@ -3,34 +3,49 @@
     justify-content: space-between
     background-color: #0032E3
     height: 620px
-
+    @media (max-width: 1050px)
+        height: 500px
     &__col--left
         color: #fff
-        width: 630px
-        // display: flex
-        // flex-direction: column
-        // justify-content: center
+        width: 40%
+        max-width: 630px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        @media (max-width: 650px)
+            width: 100%
+            order: 2
 
     &__col--right
-        width: 100%
+        width: 60%
         height: 100%
         position: relative
+        @media (max-width: 650px)
+            width: 100%
+            order: 1
 
     &__title
         margin-bottom: 1.5rem
         font-size: 4vmax
-        padding-top: 160px
         line-height: 5vmax
         letter-spacing: -0.02em
+        
+
 
     &__desc
         line-height: 132.6%
         letter-spacing: -0.02em
         font-size: 1.12rem
         color: #BCCBFE
-        max-width: 450px
+        max-width: 350px
+        @media (max-width: 1050px)
+            font-size: 1rem
 
     &__img
         position: absolute
         right: 0
-        bottom: -4%
+        bottom: -8%
+        max-width: 100%
+        @media (max-width: 1050px)
+            bottom: 50%
+            transform: translateY(50%)

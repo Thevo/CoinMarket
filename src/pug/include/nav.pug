@@ -1,8 +1,17 @@
 nav.nav
+    .nav__opened
+             ul.nav__opened-list
+                li.nav__opened-list-item
+                    a.nav__opened-link(href="#") Our products
+                li.nav__opened-list-item
+                    a.nav__opened-link(href="#") Why choose Crypto? 
+                li.nav__opened-list-item
+                    a.nav__opened-link(href="#") Our philosophy
     .container
         .nav__wrapper
             .nav__logo-wrap
-                button(class="nav__burger nav__burger--opened")
+                .btn
+                    button(class="nav__burger")
                 a(href="#").nav__logo Crypto
             ul.nav__list
                 li.nav__list-item

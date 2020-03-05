@@ -24,7 +24,8 @@ gulp.task("css:dev", function() {
 gulp.task("js:dev", function() {
   return gulp
     .src("./src/js/main.js")
-    .pipe(gulp.dest("./dist"));
+    .pipe(gulp.dest("./dist"))
+    .pipe(browserSync.stream());
 });
 
 gulp.task("css:prod", function() {
