@@ -1,4 +1,3 @@
-
 document.querySelector(".btn").addEventListener("click", function() {
   document
     .querySelector(".nav__burger")

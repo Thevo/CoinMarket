@@ -5,6 +5,18 @@
     height: 620px
     @media (max-width: 1050px)
         height: 500px
+    @media (max-width: 650px)
+        height: auto
+        padding-bottom: 2rem
+    
+
+    &__cols
+        display: flex
+
+        @media (max-width: 650px)
+            flex-direction: column
+            text-align: center
+
     &__col--left
         color: #fff
         width: 40%
@@ -12,9 +24,10 @@
         display: flex
         flex-direction: column
         justify-content: center
+
         @media (max-width: 650px)
-            width: 100%
             order: 2
+            width: 100%
 
     &__col--right
         width: 60%
@@ -23,14 +36,14 @@
         @media (max-width: 650px)
             width: 100%
             order: 1
-
+            padding: 10%
+            margin-bottom: 2rem
+            text-align: center
     &__title
         margin-bottom: 1.5rem
         font-size: 4vmax
         line-height: 5vmax
         letter-spacing: -0.02em
-        
-
 
     &__desc
         line-height: 132.6%
@@ -40,6 +53,7 @@
         max-width: 350px
         @media (max-width: 1050px)
             font-size: 1rem
+            max-width: 100%
 
     &__img
         position: absolute
@@ -49,3 +63,7 @@
         @media (max-width: 1050px)
             bottom: 50%
             transform: translateY(50%)
+        @media (max-width: 650px)
+            position: static
+            bottom: 0
+            transform: translateY(0)
