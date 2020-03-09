@@ -1,0 +1,105 @@
+.story
+    &__wrap
+        display: flex
+        @media (max-width: 650px)
+            flex-direction: column
+    &__left
+        margin-right: 4rem
+        flex: 0 1 35%
+        @media (max-width: 650px)
+            margin-right: 0
+            align-self: center
+    &__right
+        flex: 0 1 65%
+    &__img
+        width: 100%
+        max-width: 100%
+        min-width: 290px
+
+    &__title
+        span
+            color: #3159E8
+        margin-top: 2rem
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        letter-spacing: -0.02em
+        color: #000000
+        @media (max-width: 1050px)
+            font-size: 24px
+            line-height: 30px
+    &__user
+        font-size: 21px
+        line-height: 132.6%
+        letter-spacing: -0.02em
+        color: #000000
+        margin: 2.5rem 0 1.5rem
+
+    &__text-wrap
+        display: flex
+        @media (max-width: 1050px)
+            flex-direction: column
+
+    &__text
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: -0.02em
+        color: #6D6D6D
+        &-l
+            margin-right: 1.5rem
+            max-width: 80%
+            margin-bottom: 1rem
+        &-r
+            max-width: 80%
+    &__performance
+        max-width: 61%
+        margin-left: auto
+        margin-bottom: 6rem
+        @media (max-width: 1050px)
+            max-width: 100%
+        &-title
+            font-weight: bold
+            font-size: 15px
+            line-height: 18px
+            letter-spacing: -0.02em
+            color: #000000
+            padding: 9rem 0 1rem
+            margin-bottom: 2rem
+            border-bottom: 1px solid #ebe7ebaa
+        &-coins-list
+            display: flex
+            flex-wrap: wrap
+
+        &-coin-item
+            flex-basis: 30%
+            margin-right: 1rem
+            @media (max-width: 650px)
+                flex-basis: 100%
+                margin-bottom: 2rem
+        &-coin
+            font-weight: 600
+            font-size: 25px
+            line-height: 30px
+            letter-spacing: -0.02em
+            color: #000000
+            margin-bottom: 0.5rem
+            position: relative
+            vertical-align: middle
+        &-per
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: -0.02em
+            color: #6FA52B
+            padding: 2px
+            border: 1px solid #6FA52B
+            border-radius: 4px
+            vertical-align: middle
+            &--red
+                border: 1px solid #ff0000
+                color: #ff0000
+
+        &-price
+            font-size: 21px
+            line-height: 132.6%
+            letter-spacing: -0.02em
+            color: #6D6D6D

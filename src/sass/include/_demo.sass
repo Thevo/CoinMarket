@@ -1,0 +1,67 @@
+.demo
+    border-bottom: 1px solid #ebe7ebaa
+    padding-bottom: 6rem
+    margin-bottom: 6rem
+    @media (max-width: 1050px)
+        padding-bottom: 4rem
+    @media (max-width: 650px)
+        padding-bottom: 2rem
+
+    &__wrap
+        display: flex
+        @media (max-width: 1050px)
+            flex-direction: column
+    &__left
+        flex: 1 0 40%
+        @media (max-width: 1050px)
+            margin-bottom: 60px
+            display: flex
+            flex-direction: column
+            align-items: center
+
+
+    &__right
+        flex: 0 1 60%
+        @media (max-width: 1050px)
+            flex: 1 1 100%
+    &__title
+        font-weight: 600
+        max-width: 420px
+        font-size: 36px
+        line-height: 48px
+        letter-spacing: -0.02em
+        color: #000000
+        margin-bottom: 20px
+        @media (max-width: 1050px)
+            max-width: 100%
+            text-align: center
+            font-size: 24px
+    &__desc
+        font-size: 16px
+        max-width: 60%
+        line-height: 24px
+        letter-spacing: -0.02em
+        color: #6D6D6D
+        margin-bottom: 40px
+        @media (max-width: 1050px)
+            max-width: 450px
+            width: 100%
+            text-align: center
+    &__btn
+        display: block
+        padding: 18px 0 20px
+        width: 230px
+        text-align: center
+        background-color: #0032E3
+        border-radius: 10px
+        font-size: 18px
+        letter-spacing: -0.02em
+        color: #FFFFFF
+        transition: all .3s
+        &:hover
+            transform: translateY(-2px)
+        @media (max-width: 1050px)
+            display: none
+    &__img
+        width: 100%
+        max-width: 100%
