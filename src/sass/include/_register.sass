@@ -1,0 +1,48 @@
+.register
+    padding: 5rem 0
+    border-bottom:  1px solid #ebe7ebaa
+    &__wrap
+        display: flex
+        justify-content: center
+        @media (max-width: 650px)
+            flex-direction: column
+    &__left
+        margin-right: 4rem
+        flex-shrink: 0
+        @media (max-width: 650px)
+            align-self: center
+    &__img
+        width: 100%
+        max-width: 100%
+
+    &__right
+    &__title
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+        letter-spacing: -0.02em
+        color: #000000
+        padding: 1rem 0
+        max-width: 630px
+        @media (max-width: 650px)
+            font-size: 24px
+            line-height: 30px
+            text-align: center
+            
+    &__btn
+        text-align: center
+        padding: 20px 
+        background: #0032E3
+        border-radius: 10px
+        font-weight: bold
+        font-size: 18px
+        line-height: 22px
+        letter-spacing: -0.02em
+        color: #FFFFFF
+        display: block
+        max-width: 340px
+        transition: all .3s
+        &:hover
+            transform: translateY(-2px)
+        @media (max-width: 650px)
+            max-width: 100%

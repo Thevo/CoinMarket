@@ -1,0 +1,110 @@
+.footer
+    &__wrap
+        display: flex
+        margin: 5rem 0
+        @media (max-width: 1050px)
+            flex-direction: column
+        @media (max-width: 650px)
+            margin: 2rem 0
+    &__left
+        flex-basis: 35%
+        @media (max-width: 1050px)
+            margin-bottom: 90px
+    &__right
+        flex-basis: 65%
+        display: flex
+        justify-content: space-around
+        @media (max-width: 1050px)
+            justify-content: start
+        @media (max-width: 650px)
+            flex-basis: 100%
+            flex-direction: column 
+            justify-content: start
+
+    &__logo
+        font-weight: bold
+        font-size: 24px
+        line-height: 29px
+        letter-spacing: -0.02em
+        color: #000000
+        margin-bottom: 30px
+        display: block
+        &::after
+            content: "."
+            color: #0032E3
+    &__desc
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: -0.02em
+        color: #6D6D6D
+        margin-bottom: 30px
+        @media (max-width: 1050px)
+            max-width: 50%
+        @media (max-width: 650px)
+            max-width: 100%
+    &__email
+        width: 70%
+        background: #FFFFFF
+        margin-right: 5px   
+        padding: 20px 0 20px 10px
+        border: 1px solid rgba(0, 0, 0, 0.66)
+        font-size: 18px
+        line-height: 22px
+        letter-spacing: -0.02em
+        color: #000000
+        &::placeholder
+            font-size: 18px
+            line-height: 22px
+            letter-spacing: -0.02em
+            color: #000000
+        @media (max-width: 1050px)
+            width: 50%
+        @media (max-width: 650px)
+            width: 100%
+            margin-bottom: 1rem
+
+    &__btn
+        padding: 21px 30px
+        background-color: #0032E3
+        color: #fff
+        font-size: 18px
+        line-height: 22px
+        letter-spacing: -0.02em
+        border-radius: 10px
+        cursor: pointer
+        transition: all .1s
+        &:hover
+            transform: translateX(-2px)
+        @media (max-width: 650px)
+            width: 100% 
+    &__list
+        @media (max-width: 1050px)
+             margin-right: 12vw  
+        &-title
+            font-weight: 600
+            font-size: 16px
+            letter-spacing: -0.02em
+            color: #000000
+            margin-bottom: 1.5rem
+        &-item
+            margin-bottom: 1rem
+            transition: all .3s
+            &:hover
+                transform: translateY(1px)
+            @media (max-width: 650px)
+                &:last-child
+                    margin-bottom: 3.5rem
+
+        &-link
+            font-size: 16px
+            letter-spacing: -0.02em
+            color: #6D6D6D
+            &:hover
+                color: #535252
+                transform: translateY(1px)
+    &__rights
+        font-size: 14px
+        letter-spacing: -0.02em
+        color: #000000
+        margin-bottom: 1rem
+        
