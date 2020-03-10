@@ -2,10 +2,10 @@
     display: flex
     justify-content: space-between
     background-color: #0032E3
-    height: 620px
+    min-height: 620px
     margin-bottom: 200px
     @media (max-width: 1050px)
-        height: 500px
+        min-height: 500px
         margin-bottom: 100px
     @media (max-width: 650px)
         margin-bottom: 50px
@@ -47,6 +47,9 @@
         font-size: 4vmax
         line-height: 5vmax
         letter-spacing: -0.02em
+        @media (min-width: 1300px)
+            font-size: 70px
+
 
     &__desc
         line-height: 132.6%
